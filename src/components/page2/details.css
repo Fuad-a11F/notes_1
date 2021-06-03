@@ -1,0 +1,10 @@
+.title__btn {
+    background-color: rgb(32, 216, 32);
+    color: white;
+    padding: 10px 33px;
+    font-size: 22px;
+    max-width: 100%;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+

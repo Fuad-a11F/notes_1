@@ -1,0 +1,188 @@
+.add__task    {
+    height: 100px;
+    width: 130px;
+    background-color: rgb(7, 7, 80);
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+.task {
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    padding: 0 8px 0 8px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.4);
+}
+
+.task__row  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.task__input {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.task__input input{
+    display: block;
+    width: calc(100% - 8px);
+    height: 26px;
+    font-size: 17px;
+}
+
+.active__task {
+    background-color: rgb(32, 216, 32);
+    margin: 5px  0;
+    min-height: 36px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 8px;
+}
+
+.item__list__body {
+    position: relative;
+}
+
+.done__task {
+    background-color: rgb(174, 172, 172);
+    margin: 5px  0;
+    min-height: 36px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 8px;
+    text-decoration: line-through;
+}
+
+.task__add__form {
+    width: 240px;
+    background-color: rgb(242, 240, 240);
+    height: 90px;
+    padding-left: 8px;
+    padding-top: 22px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.task__add-input input{
+    width: 175px;
+    height: 27px;
+    font-size: 17px;
+}
+
+.task__add-input p{
+    position: relative;
+    top: -12px;
+    left: 40px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.task__add-close  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 1px solid rgb(32, 216, 32);
+    color: rgb(32, 216, 32);
+    font-size: 9px;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.task_body {
+    position: relative;
+    z-index: 2;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.center {
+    top: 7px;
+    right: 5px
+}
+
+ .input_edit {
+     position: absolute;
+     top:2px;
+     left: 0;
+     width: calc(100% - 40px);
+ }
+
+ .input_edit input   {
+    background-color: rgb(32, 216, 32);
+    height: 26px;
+    border-radius: 5px;
+    z-index: 199;
+    max-width: 100%;
+ }
+
+ .input_edit span {
+     position: absolute;
+     display: block;
+     height: 34px;
+     width: 50px;
+     padding-top: 4px;
+     top: 0;
+     right: -47px;
+     right: -47px;
+     cursor: pointer;
+ }
+
+ .task__title {
+     margin: 16px 0 20px 0;
+     font-weight: 600;
+     font-size: 17px;
+ }
+
+ @media (max-width: 530px) {
+    .task__row  {
+        justify-content: center;
+    }
+    .task {
+        flex: 0 1 100%
+    }
+}
+
+
+
+.drag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.6);
+    z-index: 5;
+    font-size: 64px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none
+}
+
+.drag_visible {
+    opacity: 1;
+}

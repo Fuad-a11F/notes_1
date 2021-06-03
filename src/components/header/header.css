@@ -1,0 +1,14 @@
+.header {
+    font-size: 64px;
+    text-align: center;
+    margin: 40px 0 60px 0;
+    font-weight: 700;
+    color: rgb(8, 8, 116)
+}
+
+.logout {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+}
