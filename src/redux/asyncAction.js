@@ -12,8 +12,8 @@ export function main_server_get(token) {
 export function main_server_title(id) {
     return dispatch => {
         axios.get(`http://localhost:5000/get_tasks?_id=${id}`).then(data => {
-            dispatch(add_tasks(data.data.task)),
-            dispatch(add_task_list([...data.data.tasks_list]))
+            dispatch(add_tasks(data.data.task));
+            dispatch(add_task_list([...data.data.tasks_list]));
         })
     }
 }
